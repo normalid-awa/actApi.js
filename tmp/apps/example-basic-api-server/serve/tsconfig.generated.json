@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@actapi.js/common": [
+        "@actapi.js/common/src/index.ts"
+      ],
+      "@actapi.js/core": [
+        "dist/@actapi.js/core"
+      ]
+    }
+  },
+  "extends": "..\\..\\..\\..\\apps\\example-basic-api-server\\tsconfig.app.json"
+}
