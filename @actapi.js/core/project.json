@@ -1,0 +1,19 @@
+{
+	"name": "@actapi.js/core",
+	"$schema": "../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "@actapi.js/core/src",
+	"projectType": "library",
+	"tags": [],
+	"targets": {
+		"build": {
+			"executor": "@nx/js:tsc",
+			"outputs": ["{options.outputPath}"],
+			"options": {
+				"outputPath": "dist/@actapi.js/core",
+				"main": "@actapi.js/core/src/index.ts",
+				"tsConfig": "@actapi.js/core/tsconfig.lib.json",
+				"assets": []
+			}
+		}
+	}
+}

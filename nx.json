@@ -8,7 +8,27 @@
 		},
 		"typecheck": {
 			"dependsOn": ["^typecheck"]
+		},
+		"@nx/js:tsc": {
+			"cache": true,
+			"dependsOn": ["^build"],
+			"inputs": ["default", "^default"]
 		}
 	},
-	"defaultBase": "main"
+	"defaultBase": "main",
+	"nxCloudAccessToken": "NmZhZGM2MTAtOGRkYS00NzhlLWFlODYtMDQ2ZTc4OTUwODQyfHJlYWQtd3JpdGU=",
+	"plugins": [
+		{
+			"plugin": "@nx/eslint/plugin",
+			"options": {
+				"targetName": "lint"
+			}
+		},
+		{
+			"plugin": "@nx/jest/plugin",
+			"options": {
+				"targetName": "test"
+			}
+		}
+	]
 }
